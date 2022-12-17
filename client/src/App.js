@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Image from "./components/layout/Image"
+import Flex from "./components/layout/Flex"
+import List from "./components/layout/List"
+import ListItem from "./components/layout/ListItem"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <nav>
+        <div className="max-w-container  mx-auto p-2.5">
+          <Flex className="flex">
+            <div className="w-3/12">
+              <Image imgsrc="assets/logo.png" />
+            </div>
+
+            <div className="w-9/12">
+              <List className="flex justify-end gap-x-10 font-dm text-sm font-bold">
+                <ListItem itemname="Home" className="text-white" />
+                <ListItem itemname="Shop" />
+                <ListItem itemname="About" />
+                <ListItem itemname="Contact" />
+                <ListItem itemname="Service" />
+              </List>
+            </div>
+          </Flex>
+        </div>
+      </nav>
+    </>
+  )
 }
 
-export default App;
+export default App
