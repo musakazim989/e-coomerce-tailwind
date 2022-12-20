@@ -36,7 +36,7 @@ const Navbar = () => {
             />
 
             {show && (
-              <List className=" lg:flex lg:justify-end lg:gap-x-10 font-dm text-sm font-bold mt-5 lg:mt-0 ">
+              <List className=" lg:flex lg:justify-end lg:gap-x-10  font-dm text-sm font-bold mt-5 lg:mt-0 ">
                 <ListItem itemname="Home" className="my-2.5 lg:my-0" />
                 <ListItem itemname="Shop" className="my-2.5 lg:my-0" />
                 <ListItem itemname="About" className="my-2.5 lg:my-0" />
